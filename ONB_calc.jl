@@ -12,10 +12,9 @@ function Create_ONB(Mtrx)
             Basis[i] = Basis[i] - (dot(Basis[j], Mtrx[:, i])/dot(Basis[j], Basis[j]))Basis[j]
         end
         Basis[i] = (1/sqrt(dot(Basis[i], Basis[i])))Basis[i]
-        println(dot(Basis[i], Basis[i]))
     end
     
     return Basis
-   
+    
 end
 
